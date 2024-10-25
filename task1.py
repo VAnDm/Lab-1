@@ -1,5 +1,5 @@
-WHITE = '\u001b[47m'
-RED = '\u001b[41m'
+WHITE = '\u001b[48;5;255m'
+RED = '\u001b[48;5;160m'
 END = '\u001b[0m'
 
 def draw_poland():
