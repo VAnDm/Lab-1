@@ -39,11 +39,11 @@ def draw_chart(numbers, maxlen = 100):
         print(f"{' ' * (longest - len(f"{x}"))}{x} {COLORS[i % 2]}{' ' * length}{END}")
         print(f"{' ' * (longest + 1)}{COLORS[i % 2]}{' ' * length}{END}")
 
-
-modules = []
-for i in range(250):
-    a = float(input())
-    modules.append(abs(a))
-firsts = sum(modules[0:125]) / 125
-seconds = sum(modules[125:250]) / 125
-draw_chart([firsts, seconds])
+if __name__ == "__main__":
+    modules = []
+    for i in range(250):
+        a = float(input())
+        modules.append(abs(a))
+    firsts = sum(modules[0:125]) / 125
+    seconds = sum(modules[125:250]) / 125
+    draw_chart([firsts, seconds])
