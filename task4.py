@@ -32,7 +32,7 @@ def draw_chart(numbers, maxlen = 100):
         y = true_round(numbers[i], 3)
         longest = max(longest, len(f"{y}"))
     for i in range(len(numbers)):
-        print('\n')
+        print(' ')
         length = true_round(maxlen * (numbers[i] / a))
         x = true_round(numbers[i], 3)
         print(f"{' ' * (longest + 1)}{COLORS[i % 2]}{' ' * length}{END}")
